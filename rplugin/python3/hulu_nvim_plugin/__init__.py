@@ -1,4 +1,4 @@
-from package import ANSWER 
+from .package import ANSWER 
 
 import pynvim
 
