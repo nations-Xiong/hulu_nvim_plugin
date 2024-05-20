@@ -16,3 +16,8 @@ class Plugin(object):
     def print_range(self):
         for line in self.nvim.current.range:
             print(line)
+
+    @pynvim.command('PrintBuffer')
+    def print_buffer(self):
+        for line in self.nvim.current.buffer:
+            print(line)
