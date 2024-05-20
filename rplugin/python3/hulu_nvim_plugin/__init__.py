@@ -20,4 +20,4 @@ class Plugin(object):
     @pynvim.command('PrintBuffer')
     def print_buffer(self):
         for line in self.nvim.current.buffer:
-            print(line)
+            self.nvim.command(f"echo '{line}'")
