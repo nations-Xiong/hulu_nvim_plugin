@@ -6,6 +6,6 @@ class Plugin(object):
     def __init__(self, nvim):
         self.nvim = nvim
 
-    @pynvim.command('Test', nargs='*', range='')
-    def test(self, args, range):
+    @pynvim.command('Test')
+    def test(self):
         self.nvim.out_write('hello from hulu_nvim_plugin')
