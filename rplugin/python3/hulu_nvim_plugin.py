@@ -8,4 +8,4 @@ class Plugin(object):
 
     @pynvim.command('Test')
     def test(self):
-        self.nvim.out_write('hello from hulu_nvim_plugin')
+        self.nvim.command('echo "hello from hulu_nvim_plugin"')
