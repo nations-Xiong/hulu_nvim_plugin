@@ -1,4 +1,4 @@
-from hulu_nvim_plugin import ANSWER 
+from package import ANSWER 
 
 import pynvim
 
